@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "vazirmatn";
+    src: url(../fonts/Vazirmatn-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: "vazirmatn",sans-serif;
+}

@@ -1,0 +1,68 @@
+/* reset.css */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default hyperlink styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Remove default form control styles */
+input,
+textarea,
+select,
+button {
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+}
+
+/* Disable user selection */
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Remove default table border spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
