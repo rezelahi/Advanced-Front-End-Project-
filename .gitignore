@@ -2,5 +2,5 @@
 *.docx
 *.pdf
 *.tff
-/images
-/fonts
+images/
+fonts/
