@@ -10,47 +10,13 @@ body {
   background-color: var(--primary-color);
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-.justify-center {
-  justify-content: center;
-}
-.justify-around {
-  justify-content: space-around;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.h-full {
-  height: 100%;
-}
-
 .container {
   max-width: 1124px;
   margin: 0 auto;
   background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 3fr;
   grid-gap: var(--gap-column);
   grid-template-areas:
     "right middleUp1 leftUp"
@@ -77,6 +43,8 @@ body {
   display: grid;
   grid-template-rows: 40% 40% 20%;
   justify-items: center;
+  border-left: 1px solid var(--text-secondary-color);
+  border-bottom: 1px solid var(--text-secondary-color);
 }
 
 .left-up-right span {
@@ -123,8 +91,10 @@ body {
 }
 #date-oghat div {
   width: 100%;
-  height: 60%;
-  padding: 0.5rem 0.25rem;
+  height: 70%;
+  padding: 0.5rem 0.15rem;
+  border: 1px solid var(--text-secondary-color) ;
+  border-radius: 0.5rem ;
 }
 
 .left-up-left {
@@ -134,6 +104,7 @@ body {
   display: grid;
   grid-template-rows: 40% 40% 20%;
   justify-items: center;
+  border-bottom: 1px solid var(--text-secondary-color);
 }
 
 #temprature {
@@ -163,6 +134,14 @@ body {
   font-size: 10px;
   gap: 0.25rem;
   color: var(--text-secondary-color);
+}
+
+#forcast div{
+  width: 100%;
+  height: 92%;
+  padding: 0.5rem 0.15rem;
+  border: 1px solid var(--text-secondary-color) ;
+  border-radius: 0.5rem ;
 }
 
 
