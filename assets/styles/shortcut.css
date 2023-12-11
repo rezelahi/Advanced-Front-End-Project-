@@ -1,0 +1,37 @@
+.overflow-y-scroll {
+    overflow-y: scroll;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .h-full {
+    height: 100%;
+  }
+
+  .p-2{
+    padding: var(--padding-general);
+  }

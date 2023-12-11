@@ -1,9 +1,12 @@
 :root {
   --primary-color: #c4def7;
+  --background-neutral-color: rgb(243, 244, 246);
   --box-round: 0.75rem;
   --gap-column: 0.5rem;
   --text-blue: rgb(39, 110, 247);
   --text-secondary-color: rgb(107, 114, 128);
+  --padding-general: 0.5rem;
+  --background-search: rgb(61 81 143);
 }
 
 body {
@@ -93,8 +96,8 @@ body {
   width: 100%;
   height: 70%;
   padding: 0.5rem 0.15rem;
-  border: 1px solid var(--text-secondary-color) ;
-  border-radius: 0.5rem ;
+  border: 1px solid var(--text-secondary-color);
+  border-radius: 0.5rem;
 }
 
 .left-up-left {
@@ -116,13 +119,13 @@ body {
 #weatherQuote {
   color: black;
   font-weight: 700;
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1rem;
 }
 
 #temprature-min-max {
   display: grid;
-  grid-template-columns: repeat(5,auto);
+  grid-template-columns: repeat(5, auto);
   justify-items: center;
   align-items: center;
   font-size: 10px;
@@ -130,20 +133,19 @@ body {
   color: var(--text-secondary-color);
 }
 
-#forcast span{
+#forcast span {
   font-size: 10px;
   gap: 0.25rem;
   color: var(--text-secondary-color);
 }
 
-#forcast div{
+#forcast div {
   width: 100%;
   height: 92%;
   padding: 0.5rem 0.15rem;
-  border: 1px solid var(--text-secondary-color) ;
-  border-radius: 0.5rem ;
+  border: 1px solid var(--text-secondary-color);
+  border-radius: 0.5rem;
 }
-
 
 .left-up-down {
   background-color: white;
@@ -158,9 +160,58 @@ body {
 }
 
 .middle-up-1 {
-  background-color: red;
+  background-color: white;
   border-radius: var(--box-round);
   grid-area: middleUp1;
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.search-bar {
+  background-color: var(--background-neutral-color);
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border-radius: 200px;
+  padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr 3fr;
+  justify-items: center;
+  align-items: center;
+  padding: var(--padding-general);
+}
+
+.search-bar input {
+  background-color: transparent;
+  border-style: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-right: 0.125rem;
+  width: 100%;
+}
+
+.search-bar img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.search-bar div img:last-of-type {
+  width: 3rem;
+  height: 1.5rem;
+  background-color: var(--background-search);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  flex-grow: 2;
+  border-radius: 100px;
+}
+
+.search-bar img:hover {
+  cursor: pointer;
 }
 
 .middle-up-2 {
