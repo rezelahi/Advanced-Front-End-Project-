@@ -7,6 +7,7 @@
   --text-secondary-color: rgb(107, 114, 128);
   --padding-general: 0.5rem;
   --background-search: rgb(61 81 143);
+  --middle-up-text: rgb(30 42 88);
 }
 
 body {
@@ -147,6 +148,10 @@ body {
   border-radius: 0.5rem;
 }
 
+.expand-icon{
+  width: 0.4rem;
+  /* padding-right: 0.125rem; */
+}
 .left-up-down {
   background-color: white;
   grid-area: leftUpDown;
@@ -215,9 +220,49 @@ body {
 }
 
 .middle-up-2 {
-  background-color: yellow;
+  /* background-color: yellow; */
   border-radius: var(--box-round);
   grid-area: middleUp2;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: var(--gap-column);
+  row-gap: var(--gap-column);
+}
+
+.item {
+  background-color: white;
+  border-radius: var(--box-round);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+}
+.item:hover{
+  cursor: pointer;
+}
+
+.item-1{
+  row-gap: 0.5rem;
+}
+.item-1 img {
+  width: 1.5rem;
+}
+
+.item-1 span{
+  color: var(--middle-up-text);
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.item-2{
+  row-gap: 0.5rem;
+  border-style: solid;
+  border-color: rgb(0, 109, 166);
+}
+
+.item-2 img{
+  width: 2.5rem;
 }
 
 .middle-down {
@@ -231,3 +276,4 @@ body {
   border-radius: var(--box-round);
   grid-area: right;
 }
+
