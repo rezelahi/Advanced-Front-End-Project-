@@ -13,8 +13,43 @@
 
 <body class="">
     <div>
+        <header class="d-flex justify-between align-center">
+            <div class="d-flex justify-center align-center">
+                <img src="/assets/images/misc/logo.svg" alt="" class="cursor-pointer">
+                <span>دستیار</span>
+            </div>
+            <div class="d-flex justify-center align-center">
+                <a href="#" class="d-flex justify-center align-center">
+                    <img src="/assets/images/misc/profile.svg" alt="" class="cursor-pointer">
+                </a>
+                <a href="#" class="d-flex justify-center align-center">
+                    <img src="/assets/images/misc/settings.svg" alt="" class="cursor-pointer">
+                </a>
+            </div>
+        </header>
         <div class="container">
-            <div class="right overflow-hidden"></div>
+            <div class="right overflow-hidden d-flex flex-col justify-between">
+                <div class="right-up overflow-hidden d-flex justify-between align-center">
+                    <span>دست نویس</span>
+                    <img src="/assets/images/misc/visible.svg" alt="">
+                </div>
+                <ol class="todo-list overflow-y-auto">
+                    <li class="d-flex justify-between align-center">
+                        <input type="checkbox" name="task1" id="task1" class="cursor-pointer">
+                        <span class="todo-list-discription">تسک شماره یک</span>
+                        <div>
+                            <img src="/assets/images/misc/edit.svg" alt="">
+                            <img src="/assets/images/misc/delete.svg" alt="" class="cursor-pointer">
+                        </div>
+                    </li>
+                </ol>
+                <form class="right-down">
+                    <div class="d-flex justify-between align-center">
+                        <input type="text" id="todo" placeholder="نوشتن تسک جدید">
+                        <button id="add-todo" type="submit"></button>
+                    </div>
+                </form>
+            </div>
             <div class="middle-up-1 overflow-hidden">
                 <div class="search-bar">
                     <img src="/assets/images/misc/Google__G__logo.svg" alt="">
@@ -112,7 +147,6 @@
             <div class="left-down"></div>
         </div>
     </div>
-
 </body>
 
 </html>

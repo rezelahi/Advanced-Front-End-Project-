@@ -1,17 +1,49 @@
 :root {
-  --primary-color: #c4def7;
-  --background-neutral-color: rgb(243, 244, 246);
   --box-round: 0.75rem;
   --gap-column: 0.5rem;
+  --padding-general: 0.5rem;
+  --primary-color: #c4def7;
+  --background-neutral-color: rgb(243, 244, 246);
+  --settings-profile-hover: rgba(243, 244, 246,0.5);
   --text-blue: rgb(39, 110, 247);
   --text-secondary-color: rgb(107, 114, 128);
-  --padding-general: 0.5rem;
   --background-search: rgb(61 81 143);
   --middle-up-text: rgb(30 42 88);
+  --slight-line: rgba(255, 255, 255, 0.6);
+  --text-logo:rgb(63 107 255);
 }
 
 body {
   background-color: var(--primary-color);
+}
+
+header {
+  max-width: 1124px;
+  margin: 1rem auto 1rem auto;
+}
+
+header div:first-child img {
+  width: 2rem;
+  margin-left: 0.5rem;
+}
+
+header div:last-child img {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
+header div:last-child img:hover{
+  border-radius: 1.5rem;
+  background-color: var(--settings-profile-hover);
+  /* opacity: 0.6; */
+
+}
+
+header div:first-child span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--text-logo);
 }
 
 .container {
@@ -88,7 +120,7 @@ body {
 
 #date-oghat {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   justify-items: center;
   align-items: center;
   gap: var(--gap-column);
@@ -96,9 +128,9 @@ body {
 #date-oghat div {
   width: 100%;
   height: 70%;
-  padding: 0.5rem 0.15rem;
+  padding: 0.5rem 0.45rem;
   border: 1px solid var(--text-secondary-color);
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
 }
 
 .left-up-left {
@@ -143,12 +175,12 @@ body {
 #forcast div {
   width: 100%;
   height: 92%;
-  padding: 0.5rem 0.15rem;
+  padding: 0.5rem 0.45rem;
   border: 1px solid var(--text-secondary-color);
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
 }
 
-.expand-icon{
+.expand-icon {
   width: 0.4rem;
   /* padding-right: 0.125rem; */
 }
@@ -169,8 +201,8 @@ body {
   border-radius: var(--box-round);
   grid-area: middleUp1;
   display: grid;
-  grid-template-columns: 1fr 9fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 16fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
 }
 
 .search-bar {
@@ -204,13 +236,13 @@ body {
 }
 
 .search-bar div img:last-of-type {
-  width: 3rem;
+  width: 3.5rem;
   height: 1.5rem;
   background-color: var(--background-search);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
   flex-grow: 2;
   border-radius: 100px;
 }
@@ -237,31 +269,31 @@ body {
   border-color: transparent;
   border-width: 1px;
 }
-.item:hover{
+.item:hover {
   cursor: pointer;
 }
 
-.item-1{
+.item-1 {
   row-gap: 0.5rem;
 }
 .item-1 img {
   width: 1.5rem;
 }
 
-.item-1 span{
+.item-1 span {
   color: var(--middle-up-text);
   font-weight: 700;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.item-2{
+.item-2 {
   row-gap: 0.5rem;
   border-style: solid;
   border-color: rgb(0, 109, 166);
 }
 
-.item-2 img{
+.item-2 img {
   width: 2.5rem;
 }
 
@@ -272,8 +304,106 @@ body {
 }
 
 .right {
-  background-color: green;
+  background-color: white;
   border-radius: var(--box-round);
   grid-area: right;
 }
 
+.right-up {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--text-secondary-color);
+}
+.right-up span {
+  font-weight: 700;
+}
+
+.right-up img {
+  background-color: var(--background-neutral-color);
+  padding: 0.75rem;
+  border-radius: 40%;
+}
+.right-up img:hover {
+  cursor: pointer;
+}
+
+.todo-list {
+  margin-bottom: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.right-down {
+  border-top: 1px solid var(--text-secondary-color);
+}
+
+.right-down > div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.75rem;
+  box-shadow: 0 0px 3px 1px rgb(0 0 0 / 0.1);
+}
+.right-down div input {
+  background-color: transparent;
+  border-style: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-right: 0.125rem;
+  width: 100%;
+}
+.right-down div button {
+  width: 1rem;
+  height: 1rem;
+  background-image: url(/assets/images/misc/plus.svg);
+  background-size: cover;
+}
+
+/* .right input[type="checkbox"] {
+  appearance: auto;
+  width: 1rem;
+  height: 1rem;
+}
+.right input[type="checkbox"]:checked {
+
+} */
+
+/* Create a custom checkbox */
+.right input[type="checkbox"]::before {
+  content: ""; /* Unicode character for a checkmark */
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(12, 181, 66, 0.4);
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(12 181 66);
+}
+
+/* Style the checkbox when it is checked */
+.right input[type="checkbox"]:checked::before {
+  background-color: #00ff00; /* Customize the color as per your preference */
+  /* Add other desired styles for the checked checkbox */
+}
+
+.todo-list-discription {
+  margin-left: auto;
+}
+
+.todo-list-discription + div > img {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
