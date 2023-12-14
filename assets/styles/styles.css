@@ -143,6 +143,10 @@ header div:first-child span {
   border-bottom: 1px solid var(--text-secondary-color);
 }
 
+.left-up-left div:nth-child(2){
+  row-gap: 0.25rem;
+}
+
 #temprature {
   font-weight: 700;
   font-size: 1.875rem;
