@@ -1,0 +1,21 @@
+@media (min-width: 340px) and (max-width: 900px) {
+    .container {
+        max-width: 100vw;
+        margin: 0 auto;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 2fr 3fr; */
+        grid-gap: var(--gap-column);
+        grid-template-areas:
+          "middleUp1"
+          "leftUp"
+          "middleUp2"
+          "right";
+      }
+      header{
+        max-width: 100vw;
+        margin: 0 auto;
+        padding-left: var(--gap-column);
+      }
+  }

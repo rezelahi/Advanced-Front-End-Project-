@@ -44,6 +44,7 @@ const getTodos = async () => {
   try {
     const response = await fetch(url);
     const todos = await response.json();
+    todoListElement.innerHTML = "";
     for (let i = todos.length - 1; i >= 0; i--) {
       const todo = todos[i];
       const spanElement = document.querySelector(
@@ -118,4 +119,8 @@ app.addEventListener("click", function (e) {
     deleteTodo(id);
     console.log("delete request");
   }
+});
+
+window.addEventListener("resize", function () {
+  getTodos();
 });
