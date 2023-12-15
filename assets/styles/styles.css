@@ -382,7 +382,8 @@ header div:first-child span {
 }
 
 .right input[type="checkbox"]:checked::before {
-  background-color: grey;
+  background-color: rgb(193, 38, 38);
+  border-color: rgb(148 29 29);
 }
 
 .todo-list-description {
