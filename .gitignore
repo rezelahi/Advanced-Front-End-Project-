@@ -1,7 +1,4 @@
 *.doc
 *.docx
 *.pdf
-*.tff
-images/
-fonts/
 node_modules
