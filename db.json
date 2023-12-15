@@ -1,0 +1,54 @@
+{
+  "todos": [
+    {
+      "title": "حفظ محیط زیست و خانه",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "title": "مدیریت زمان و برنامه‌ریزی",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "title": "کمک به دیگران",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "title": "ارتباط با عزیزان",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "title": "بررسی اخبار و به‌روزرسانی‌ها",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "title": "مراقبت از خود و سلامتی",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "title": "استراحت و آرامش",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "title": "مطالعه و یادگیری",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "title": "ورزش و تمرین فیزیکی",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "title": "برنامه‌ریزی روزانه و اولویت‌بندی",
+      "completed": false,
+      "id": 12
+    }
+  ]
+}

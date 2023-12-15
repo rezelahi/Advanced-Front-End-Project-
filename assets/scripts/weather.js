@@ -15,11 +15,6 @@ async function addWeather() {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       const data = await response.json();
-      console.log(data);
-      console.log(data[0]);
-      console.log(data[0].current);
-      console.log(Math.floor(data[0].current));
-      console.log(convertToPersianNumber(Math.floor(data[0].current)));
 
       tempratureElement.innerHTML = `${convertToPersianNumber(Math.floor(data[0].current))}°`;
       tempratureElement.style.color = data[0].textColor;

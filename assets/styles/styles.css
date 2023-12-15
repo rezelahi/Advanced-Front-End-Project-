@@ -35,8 +35,6 @@ header div:last-child img {
 header div:last-child img:hover{
   border-radius: 1.5rem;
   background-color: var(--settings-profile-hover);
-  /* opacity: 0.6; */
-
 }
 
 header div:first-child span {
@@ -186,8 +184,8 @@ header div:first-child span {
 
 .expand-icon {
   width: 0.4rem;
-  /* padding-right: 0.125rem; */
 }
+
 .left-up-down {
   background-color: white;
   grid-area: leftUpDown;
@@ -256,7 +254,6 @@ header div:first-child span {
 }
 
 .middle-up-2 {
-  /* background-color: yellow; */
   border-radius: var(--box-round);
   grid-area: middleUp2;
   display: grid;
@@ -273,15 +270,13 @@ header div:first-child span {
   border-color: transparent;
   border-width: 1px;
 }
+
 .item:hover {
   cursor: pointer;
 }
 
-.item-1 {
+.item {
   row-gap: 0.5rem;
-}
-.item-1 img {
-  width: 1.5rem;
 }
 
 .item-1 span {
@@ -292,13 +287,8 @@ header div:first-child span {
 }
 
 .item-2 {
-  row-gap: 0.5rem;
   border-style: solid;
   border-color: rgb(0, 109, 166);
-}
-
-.item-2 img {
-  width: 2.5rem;
 }
 
 .middle-down {
@@ -320,6 +310,7 @@ header div:first-child span {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--text-secondary-color);
 }
+
 .right-up span {
   font-weight: 700;
 }
@@ -329,6 +320,7 @@ header div:first-child span {
   padding: 0.75rem;
   border-radius: 40%;
 }
+
 .right-up img:hover {
   cursor: pointer;
 }
@@ -358,6 +350,7 @@ header div:first-child span {
   border-radius: 0.75rem;
   box-shadow: 0 0px 3px 1px rgb(0 0 0 / 0.1);
 }
+
 .right-down div input {
   background-color: transparent;
   border-style: none;
@@ -368,6 +361,7 @@ header div:first-child span {
   margin-right: 0.125rem;
   width: 100%;
 }
+
 .right-down div button {
   width: 1rem;
   height: 1rem;
@@ -375,18 +369,8 @@ header div:first-child span {
   background-size: cover;
 }
 
-/* .right input[type="checkbox"] {
-  appearance: auto;
-  width: 1rem;
-  height: 1rem;
-}
-.right input[type="checkbox"]:checked {
-
-} */
-
-/* Create a custom checkbox */
 .right input[type="checkbox"]::before {
-  content: ""; /* Unicode character for a checkmark */
+  content: "";
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -397,17 +381,16 @@ header div:first-child span {
   border-color: rgb(12 181 66);
 }
 
-/* Style the checkbox when it is checked */
 .right input[type="checkbox"]:checked::before {
-  background-color: #00ff00; /* Customize the color as per your preference */
-  /* Add other desired styles for the checked checkbox */
+  background-color: grey;
 }
 
-.todo-list-discription {
+.todo-list-description {
   margin-left: auto;
+  font-size: 1rem;
 }
 
-.todo-list-discription + div > img {
+.todo-list-description + div > img {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }

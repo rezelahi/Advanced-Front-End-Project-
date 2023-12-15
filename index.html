@@ -12,7 +12,7 @@
 </head>
 
 <body class="">
-    <div>
+    <div id="app">
         <header class="d-flex justify-between align-center">
             <div class="d-flex justify-center align-center">
                 <img src="/assets/images/misc/logo.svg" alt="" class="cursor-pointer">
@@ -29,24 +29,17 @@
         </header>
         <div class="container">
             <div class="right overflow-hidden d-flex flex-col justify-between">
-                <div class="right-up overflow-hidden d-flex justify-between align-center">
+                <div class="right-up overflow-hidden d-flex justify-between align-center" id="right-up">
                     <span>دست نویس</span>
                     <img src="/assets/images/misc/visible.svg" alt="">
                 </div>
                 <ol class="todo-list overflow-y-auto">
-                    <li class="d-flex justify-between align-center">
-                        <input type="checkbox" name="task1" id="task1" class="cursor-pointer">
-                        <span class="todo-list-discription">تسک شماره یک</span>
-                        <div>
-                            <img src="/assets/images/misc/edit.svg" alt="">
-                            <img src="/assets/images/misc/delete.svg" alt="" class="cursor-pointer">
-                        </div>
-                    </li>
                 </ol>
                 <form class="right-down">
                     <div class="d-flex justify-between align-center">
                         <input type="text" id="todo" placeholder="نوشتن تسک جدید">
                         <button id="add-todo" type="submit"></button>
+                        <!-- <input id="add-todo" type="submit" value="+"></input> -->
                     </div>
                 </form>
             </div>
@@ -62,38 +55,39 @@
                 </div>
             </div>
             <div class="middle-up-2 overflow-hidden">
-                <div class="item item-1 d-flex flex-col justify-center align-center">
-                    <img src="/assets/images/misc/dialpad.svg" alt="">
+                <a class="item item-1 d-flex flex-col justify-center align-center" href="#">
+                    <img src="/assets/images/misc/dialpad.svg" class="h-15" alt="">
                     <span dir="rtl">دم دستی</span>
-                </div>
-                <div class="item item-2 d-flex flex-col justify-center align-center">
-                    <img src="/assets/images/misc/shab.svg" alt="">
+                </a>
+                <a class="item item-2 d-flex flex-col justify-center align-center" href="https://www.shab.ir/" target="_blank">
+                    <img src="/assets/images/misc/shab.svg" class="h-15" alt="">
                     <span dir="rtl">شب</span>
-                </div>
-                <div class="item item-3 d-flex flex-col justify-center align-center">
+                </a>
+                
+                <a class="item item-3 d-flex flex-col justify-center align-center" href="https://www.youtube.com/" target="_blank">
+                    <img src="/assets/images/misc/youtube.jpg" class="h-15" alt="">
+                    <span dir="rtl">یوتیوب</span>
+                </a>
+                
+                <a class="item item-4 d-flex flex-col justify-center align-center" href="https://www.ensafnews.com/" target="_blank">
+                    <img src="/assets/images/misc/ensafNews.jpg" class="h-15" alt="">
+                    <span dir="rtl">انصاف نیوز</span>
+                </a>
+                <a class="item item-5 d-flex flex-col justify-center align-center" href="#">
                     <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
-                <div class="item item-4 d-flex flex-col justify-center align-center">
+                </a>
+                <a class="item item-6 d-flex flex-col justify-center align-center" href="#">
                     <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
-                <div class="item item-5 d-flex flex-col justify-center align-center">
+                </a>
+                <a class="item item-7 d-flex flex-col justify-center align-center" href="#">
                     <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
-                <div class="item item-6 d-flex flex-col justify-center align-center">
+                </a>
+                <a class="item item-8 d-flex flex-col justify-center align-center" href="#">
                     <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
-                <div class="item item-7 d-flex flex-col justify-center align-center">
+                </a>
+                <a class="item item-9 d-flex flex-col justify-center align-center" href="#">
                     <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
-                <div class="item item-8 d-flex flex-col justify-center align-center">
-                    <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
-                <div class="item item-9 d-flex flex-col justify-center align-center">
-                    <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
-                <div class="item item-10 d-flex flex-col justify-center align-center">
-                    <img src="/assets/images/misc/plus.svg" alt="">
-                </div>
+                </a>
             </div>
             <div class="middle-down overflow-hidden"></div>
             <div class="left-up overflow-hidden">
@@ -149,6 +143,8 @@
     </div>
     <script src="/assets/scripts/timeDate.js"></script>
     <script src="/assets/scripts/weather.js"></script>
+    <script src="/assets/scripts/todo.js"></script>
+    <script src="/assets/scripts/redirect.js"></script>
 </body>
 
 </html>

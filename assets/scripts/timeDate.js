@@ -61,7 +61,9 @@ async function addDate() {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const data = await response.json();
+
     data.islamicHijri.year = data.islamicHijri.year.replace(/\sهـ$/, "");
+    convertDatePersian(data);
 
     arabicDate.innerHTML = `${data.islamicHijri.year}/${data.islamicHijri.month}/${data.islamicHijri.dayInMonth}`;
     englishDate.innerHTML = `${data.miladi.year} / ${data.miladi.month} / ${data.miladi.dayInMonth}`;
