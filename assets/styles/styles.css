@@ -4,13 +4,13 @@
   --padding-general: 0.5rem;
   --primary-color: #c4def7;
   --background-neutral-color: rgb(243, 244, 246);
-  --settings-profile-hover: rgba(243, 244, 246,0.5);
+  --settings-profile-hover: rgba(243, 244, 246, 0.5);
   --text-blue: rgb(39, 110, 247);
   --text-secondary-color: rgb(107, 114, 128);
   --background-search: rgb(61 81 143);
   --middle-up-text: rgb(30 42 88);
   --slight-line: rgba(255, 255, 255, 0.6);
-  --text-logo:rgb(63 107 255);
+  --text-logo: rgb(63 107 255);
 }
 
 body {
@@ -32,7 +32,7 @@ header div:last-child img {
   padding: 0.5rem;
 }
 
-header div:last-child img:hover{
+header div:last-child img:hover {
   border-radius: 1.5rem;
   background-color: var(--settings-profile-hover);
 }
@@ -141,7 +141,7 @@ header div:first-child span {
   border-bottom: 1px solid var(--text-secondary-color);
 }
 
-.left-up-left div:nth-child(2){
+.left-up-left div:nth-child(2) {
   row-gap: 0.25rem;
 }
 
@@ -389,6 +389,10 @@ header div:first-child span {
 .todo-list-description {
   margin-left: auto;
   font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
 }
 
 .todo-list-description + div > img {

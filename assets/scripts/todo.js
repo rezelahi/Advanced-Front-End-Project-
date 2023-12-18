@@ -6,40 +6,6 @@ const submitForm = document.getElementById("add-todo");
 const inputTodo = document.getElementById("todo");
 const rightElement = document.getElementById("right-up");
 
-const convertRemToPixels = function (rem) {
-  const rootFontSize =
-    parseFloat(getComputedStyle(document.documentElement).fontSize) * rem;
-  return rootFontSize;
-};
-
-const getTextWidth = function (text, fontSize, fontFamily) {
-  const canvas = document.createElement("canvas");
-  const context = canvas.getContext("2d");
-  context.font = `${fontSize}px ${fontFamily}`;
-
-  const metrics = context.measureText(text);
-  const width = metrics.width;
-
-  return width;
-};
-
-const getTextTruncated = function (text, fontSize, fontFamily, maxWidth) {
-  const width = getTextWidth(text, fontSize, fontFamily);
-  const isSpanLengthGreaterThanHalf = width > maxWidth;
-
-  if (isSpanLengthGreaterThanHalf) {
-    let checkWidth = () => {
-      return getTextWidth(text, fontSize, fontFamily);
-    };
-    while (checkWidth() > maxWidth) {
-      text = text.slice(0, -1);
-    }
-    text += "...";
-  } else {
-  }
-  return text;
-};
-
 const getTodos = async () => {
   try {
     const response = await fetch(url);
@@ -49,13 +15,6 @@ const getTodos = async () => {
       const todo = todos[i];
       const spanElement = document.querySelector(
         `[data-id="${todo.id}"] .todo-list-description`
-      );
-
-      todo.title = getTextTruncated(
-        todo.title,
-        convertRemToPixels(1),
-        "vazirmatn",
-        rightElement.offsetWidth / 2.3
       );
 
       const data = `<li data-id="${todo.id}" class="d-flex justify-between align-center todo-${todo.id}">
